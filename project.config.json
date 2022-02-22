@@ -4,10 +4,10 @@
   "description": "",
   "appid": "wxb828dd1c95adbdb7",
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": false,
-    "enhance": true,
-    "postcss": true,
+    "enhance": false,
+    "postcss": false,
     "preloadBackgroundData": false,
     "minified": true,
     "newFeature": false,

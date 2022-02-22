@@ -12,7 +12,7 @@ yarn dev:weapp
 
 ## 问题
 * 非懒加载模式会报错，在 `wx-canvas.js` 中添加 `addEventListener() {}` 即可
-* 自定义组件模式 `tooltip` 不能正常显示，还没结果
+* 自定义组件模式 `tooltip` 不能正常显示，`vue3` 中事件名为全小写修复
 * 原生组件模式通过 `ref` 调用 `init` 会找不到
 * 原生组件模式会出现 `canvas` 层级过高，通过转换为图片来切换显示
 
