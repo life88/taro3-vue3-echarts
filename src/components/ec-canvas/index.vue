@@ -4,9 +4,9 @@
     class="ec-canvas"
     ref="canvasRef"
     :canvas-id="canvasId"
-    @touchStart="touchStart"
-    @touchMove="touchMove"
-    @touchEnd="touchEnd"
+    @touchstart="touchStart"
+    @touchmove="touchMove"
+    @touchend="touchEnd"
   ></canvas>
 </template>
 <script lang="ts" setup>
