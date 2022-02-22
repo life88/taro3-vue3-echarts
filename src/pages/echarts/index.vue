@@ -1,13 +1,13 @@
 <template>
   <view class="echarts-page">
     <view class="pie-chart">
-      <ec-canvas ref="ecCanvasRef" canvas-id="pieCanvas" :ec="ec"></ec-canvas>
+      <e-canvas ref="ecCanvasRef" canvas-id="pieCanvas" :ec="ec"></e-canvas>
     </view>
   </view>
 </template>
 <script lang="ts" setup>
 import { onMounted, ref } from "vue";
-import EcCanvas from '@/components/ec-canvas/index.vue';
+import ECanvas from '@/components/ec-canvas/index.vue';
 import * as echarts from '@/components/ec-canvas/echarts';
 
 let chart;
