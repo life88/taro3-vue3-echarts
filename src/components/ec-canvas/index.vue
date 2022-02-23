@@ -2,6 +2,7 @@
   <canvas
     type="2d"
     class="ec-canvas"
+    :class="uid"
     ref="canvasRef"
     :canvas-id="canvasId"
     @touchstart="touchStart"
@@ -16,6 +17,8 @@ import WxCanvas from './wx-canvas';
 import * as echarts from './echarts';
 
 const props = defineProps<{ canvasId?: string; ec: any }>();
+
+const uid = `ec-canvas-${Date.now()}`;
 
 const canvasRef = ref();
 const chart = ref();
@@ -35,7 +38,7 @@ const initByNewWay = callback => {
   const { ec, canvasId } = props;
 
   query
-    .select('.ec-canvas')
+    .select(`.${uid}`)
     .fields({
       node: true,
       size: true,
